@@ -1,5 +1,5 @@
 body {
-  font-family: "Trip Sans Reg";
+  font-family: "TS-Reg";
 }
 a {
   text-decoration: none;
@@ -24,7 +24,7 @@ header img {
 }
 
 .navbar ul {
-  font-family: "Trip Sans Reg";
+  font-family: "TS-Med";
   font-size: 16px;
   line-height: 20px;
   display: flex;
