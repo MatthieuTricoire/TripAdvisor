@@ -1,44 +1,70 @@
 body {
   font-family: "TS-Reg";
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 54px;
+  font-family: "TS-Med";
+  line-height: 65px;
+  color: black;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 34px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
 }
 a {
   text-decoration: none;
   color: inherit;
 }
+.container {
+  width: 1136px;
+  margin: auto;
+}
+/* 
+ --------------  header  ----------------
+ */
 header {
   width: 1136px;
   margin: auto;
-  height: 80px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.container {
-  width: 1024px;
-  margin: auto;
-}
-
-header img {
-  width: 236px;
-}
-
-.navbar ul {
   font-family: "TS-Med";
   font-size: 16px;
   line-height: 20px;
+}
+header img {
+  width: 188px;
+}
+.navbar {
   display: flex;
-  gap: 2em;
+  gap: 20px;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.navbar li a {
+.navbar a {
   display: flex;
-  gap: 1em;
+  gap: 5px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.navbar a:hover {
+  background-color: hsl(0, 0%, 93%);
 }
 
 .navbar button {
+  font-size: 16px;
+  line-height: 20px;
   height: 42px;
   background-color: black;
   border-radius: 20px;
@@ -46,30 +72,141 @@ header img {
   padding: 10px 16px;
   border: none;
 }
-
-h1 {
-  font-size: 54px;
-  font-family: "Trip Sans";
-  line-height: 65px;
-  color: black;
+.navbar button:hover {
+  background-color: hsl(0, 0%, 20%);
 }
+/* 
+ --------------  title  ----------------
+*/
+.title-section {
+  padding: 32px 0px 24px 0px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.topline {
+  font-size: 14px;
+  color: #333333;
+  line-height: 17px;
+}
+.topline a {
+  text-decoration: underline;
+  font-size: 14px;
+  line-height: 17px;
+  color: inherit;
+}
+
 .acc-color {
   color: hsl(360, 100%, 68%);
 }
-
+/* 
+ --------------  cards  ----------------
+*/
 .cards {
-  margin-top: 30px;
   display: flex;
-  justify-content: space-between;
   gap: 10px;
 }
-
+.cards a {
+  flex: 1;
+}
 .card {
+  box-sizing: border-box;
   border: 1px solid black;
   border-radius: 12px;
-  padding: 11px 16px;
-  min-width: 150px;
-  height: 35px;
+  padding: 18px 16px;
+  height: 68px;
   display: flex;
   justify-content: space-between;
+}
+
+.card:hover {
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+}
+/* 
+ --------------  pictures  ----------------
+*/
+.pictures {
+  padding: 32px 0px 10px 0px;
+  display: flex;
+  gap: 2px;
+}
+
+.col-1 img {
+  width: 654px;
+  height: 430px;
+}
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.col-2 img {
+  width: 480px;
+  height: 214px;
+}
+
+/* 
+ --------------  caption  ----------------
+*/
+
+.caption {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #333333;
+  padding-bottom: 50px;
+}
+.geoNav {
+  display: flex;
+  gap: 5px;
+}
+
+.geoNav a:hover {
+  text-decoration: underline;
+}
+
+/* 
+ --------------  texte + map  ----------------
+*/
+
+.two-col {
+  display: flex;
+  flex-direction: row;
+}
+.text {
+  flex: 3;
+}
+.topmap {
+  background-color: hsl(360, 98%, 68%);
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px 20px 30px;
+}
+.topmap button {
+  font-size: 16px;
+  line-height: 20px;
+  height: 42px;
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 20px;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+}
+.topmap h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+}
+
+.a {
+  background-color: red;
+  height: 20px;
+  flex: 1.4;
+}
+.b {
+  background-color: blue;
+  height: 20px;
+  flex: 1;
 }

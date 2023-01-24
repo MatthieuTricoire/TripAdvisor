@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tripadvisor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/assets/css/reset.css" />
     <link rel="stylesheet" href="/assets/css/fonts.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
@@ -14,43 +20,36 @@
     ></script>
   </head>
   <body>
-    <header class="container">
+    <header>
       <img src="/assets/img/logo_tripadvisor.svg" alt="" />
       <div class="navbar">
-        <ul>
-          <li>
-            <a href="#"><i class="fa-solid fa-pen"></i><span>Avis</span></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-road"></i><span>Voyages</span></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-bell"></i><span>Alertes</span></a>
-          </li>
-          <li>
-            <a href="#"><button type="button">Se connecter</button></a>
-          </li>
-          <li>
-            <a href="#"
-              ><i class="fa-solid fa-cart-shopping"></i><span>Panier</span></a
-            >
-          </li>
-        </ul>
+        <a href="#"><i class="fa-solid fa-pen"></i><span>Avis</span></a>
+        <a href="#"><i class="fa-solid fa-road"></i><span>Voyages</span></a>
+        <a href="#"><i class="fa-solid fa-bell"></i><span>Alertes</span></a>
+        <button type="button">Connectez-vous</button>
+        <a href="#"
+          ><i class="fa-solid fa-cart-shopping"></i><span>Panier</span></a
+        >
       </div>
     </header>
     <main>
       <div class="container">
-        <h1><span class="acc-color">Explorez</span> Paris</h1>
-        <p>
-          Les revenus influencent le choix des expériences présentées sur cette
-          page :
-          <a
-            href="https://www.tripadvisor.fr/pages/service_fr.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            >en savoir plus</a
-          >.
-        </p>
+        <div class="title-section">
+          <h1><span class="acc-color">Explorez</span> Paris</h1>
+          <div class="topline">
+            <p>
+              Les revenus influencent le choix des expériences présentées sur
+              cette page :
+              <a
+                href="https://www.tripadvisor.fr/pages/service_fr.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >en savoir plus</a
+              >.
+            </p>
+          </div>
+        </div>
+
         <div class="cards">
           <a href="#">
             <div class="card">
@@ -70,7 +69,7 @@
           </a>
           <a href="#">
             <div class="card">
-              <span>Restaurants</span><i class="fa-regular fa-comment-dots"></i>
+              <span>Restaurants</span><i class="fa-solid fa-utensils"></i>
             </div>
           </a>
           <a href="#">
@@ -84,6 +83,47 @@
               <span>Plus</span>
             </div>
           </a>
+        </div>
+        <div class="pictures container">
+          <div class="col-1">
+            <img src="/assets/img/image-left.jpg" alt="blabla" />
+          </div>
+          <div class="col-2">
+            <img src="/assets/img/image-right-top.jpg" alt="blabla" />
+            <img src="/assets/img/image-right-bottom.jpg" alt="blabla" />
+          </div>
+        </div>
+        <div class="caption">
+          <div class="geoNav">
+            <a href="#">Europe</a> > <a href="#">France</a> >
+            <a href="#">Île-de-France</a> > <a href="#">Paris</a
+            ><i class="fa-solid fa-caret-down"></i>
+          </div>
+          <div class="city">Visiter : Paris</div>
+        </div>
+        <div class="two-col">
+          <div class="text">
+            <h2>La Ville Lumière éblouit en tous points</h2>
+            <p>
+              Aucun autre endroit au monde ne fait autant rêver que Paris. La
+              ville séduit par son art, son architecture, sa culture et sa
+              cuisine, mais il y a aussi des merveilles plus discrètes qui
+              n’attendent qu’à être explorées : les ruelles pavées pittoresques,
+              les pâtisseries au coin de la rue et les petits bistrots douillets
+              qui vous invitent à boire un verre de beaujolais. Préparez-vous à
+              vous approprier Paris.
+            </p>
+          </div>
+          <div class="map">
+            <div class="topmap">
+              <h3>Paris : commencez à organiser !</h3>
+              <p>
+                Créez un voyage pour enregistrer et organiser toutes vos idées
+                et les visualiser sur une carte.
+              </p>
+              <button type="button">Créez un voyage</button>
+            </div>
+          </div>
         </div>
       </div>
     </main>
