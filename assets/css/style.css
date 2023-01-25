@@ -176,14 +176,21 @@ header img {
   flex-direction: row;
 }
 .text {
-  flex: 3;
+  flex: 2;
+  min-width: 700px;
+}
+.text p {
+  line-height: 20px;
+  margin-top: 30px;
+  max-width: 550px;
 }
 .topmap {
+  flex: 1;
   background-color: hsl(360, 98%, 68%);
   border-radius: 10px 10px 0 0;
   display: flex;
   flex-direction: column;
-  padding: 20px 30px 20px 30px;
+  padding: 20px 40px;
 }
 .topmap button {
   font-size: 16px;
@@ -198,15 +205,12 @@ header img {
 .topmap h3 {
   font-family: "Roboto", sans-serif;
   font-size: 25px;
+  width: 300px;
+  margin-bottom: 20px;
 }
-
-.a {
-  background-color: red;
-  height: 20px;
-  flex: 1.4;
+.topmap p {
+  margin-bottom: 30px;
 }
-.b {
-  background-color: blue;
-  height: 20px;
-  flex: 1;
+.map img {
+  width: 480px;
 }
