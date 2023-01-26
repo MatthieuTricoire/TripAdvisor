@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tripadvisor</title>
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,16 +18,25 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gelasio&display=swap"
+      rel="stylesheet"
+    />
+    <!-- STYLE IMPORT -->
     <link rel="stylesheet" href="/assets/css/reset.css" />
     <link rel="stylesheet" href="/assets/css/fonts.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <!-- FONTAWESOME IMPORT-->
     <script
       src="https://kit.fontawesome.com/e3f2ff825e.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header>
+    <header class="container">
       <img src="/assets/img/logo_tripadvisor.svg" alt="" />
       <div class="navbar">
         <a href="#"><i class="fa-solid fa-pen"></i><span>Avis</span></a>
@@ -40,8 +50,8 @@
     </header>
     <main>
       <div class="container">
-        <div class="title-section">
-          <h1><span class="acc-color">Explorez</span> Paris</h1>
+        <div class="title">
+          <h1><span>Explorez</span> Paris</h1>
           <div class="topline">
             <p>
               Les revenus influencent le choix des expériences présentées sur
@@ -56,47 +66,43 @@
           </div>
         </div>
 
-        <div class="cards">
-          <a href="#">
-            <div class="card">
-              <span>Hôtels</span><i class="fa-solid fa-bed"></i>
-            </div>
+        <nav>
+          <a href="#" class="nav-item">
+            <span>Hôtels</span><i class="fa-solid fa-bed"></i>
           </a>
-          <a href="#">
-            <div class="card">
-              <span>Location de vacances</span
-              ><i class="fa-solid fa-house-circle-check"></i>
-            </div>
+          <a href="#" class="nav-item">
+            <span>Location de vacances</span
+            ><i class="fa-solid fa-house-circle-check"></i>
           </a>
-          <a href="#">
-            <div class="card">
-              <span>Activités</span><i class="fa-solid fa-mountain-sun"></i>
-            </div>
+          <a href="#" class="nav-item">
+            <span>Activités</span><i class="fa-solid fa-mountain-sun"></i>
           </a>
-          <a href="#">
-            <div class="card">
-              <span>Restaurants</span><i class="fa-solid fa-utensils"></i>
-            </div>
+          <a href="#" class="nav-item">
+            <span>Restaurants</span><i class="fa-solid fa-utensils"></i>
           </a>
-          <a href="#">
-            <div class="card">
-              <span>Forums de voyage</span
-              ><i class="fa-brands fa-discourse"></i>
-            </div>
+          <a href="#" class="nav-item">
+            <span>Forums de voyage</span><i class="fa-brands fa-discourse"></i>
           </a>
-          <a href="#">
-            <div class="card">
-              <span>Plus</span>
-            </div>
+          <a href="#" class="nav-item">
+            <span>Plus</span>
           </a>
-        </div>
+        </nav>
         <div class="pictures container">
-          <div class="col-1">
-            <img src="/assets/img/image-left.jpg" alt="blabla" />
+          <div class="left-side">
+            <img
+              src="/assets/img/image-left.jpg"
+              alt="Photo des quais de la Seine"
+            />
           </div>
-          <div class="col-2">
-            <img src="/assets/img/image-right-top.jpg" alt="blabla" />
-            <img src="/assets/img/image-right-bottom.jpg" alt="blabla" />
+          <div class="rigth-side">
+            <img
+              src="/assets/img/image-right-top.jpg"
+              alt="Photo de deux personnes montant sur une moto"
+            />
+            <img
+              src="/assets/img/image-right-bottom.jpg"
+              alt="Photo de la tour Eiffel"
+            />
           </div>
         </div>
         <div class="caption">
@@ -108,7 +114,7 @@
           <div class="city">Visiter : Paris</div>
         </div>
         <div class="two-col">
-          <div class="text">
+          <div class="col-1-a">
             <h2>La Ville Lumière éblouit en tous points</h2>
             <p>
               Aucun autre endroit au monde ne fait autant rêver que Paris. La
@@ -133,24 +139,27 @@
           </div>
         </div>
         <h2>Paris : les immanquables</h2>
+        <!-- Se divertir  -->
         <div class="blocks-template container">
           <div class="col-1">
             <h3>Se divertir</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Obcaecati, quaerat.
+              Des lieux à voir, des rues à explorer et des expériences
+              emblématiques à Paris.
             </p>
             <a href="#">Tout afficher</a>
           </div>
           <div class="col-2">
-            <div class="item-carrousel">
-              <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
-              <div class="tripadvisor-badge">
-                <img src="/assets/img/tripadvisor_badge.svg" alt="" />
-                <p>2022</p>
+            <a href="#" class="item-carrousel">
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
               </div>
-              <img src="/assets/img/image-left.jpg" alt="" />
-              <a href="#"><h4>La tour Eiffel</h4></a>
+              <div class="tripadvisor-badge">
+                <i class="fa-solid fa-ranking-star"></i>
+                <span>2022</span>
+              </div>
+              <img src="/assets/img/eiffeltoren.jpg" alt="" />
+              <h4>La tour Eiffel</h4>
               <div class="votes">
                 <div class="circles-votes"></div>
                 <i class="fa-solid fa-star"></i>
@@ -160,64 +169,254 @@
                 <i class="fa-regular fa-star"></i>
                 <span>141 649</span>
               </div>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>
+                Tours et plateformes d'observation, Monuments & Points d'intérêt
+              </p>
+            </a>
+            <a href="#" class="item-carrousel">
+              <!-- <div class="item-carrousel"> -->
+              <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+              <div class="tripadvisor-badge">
+                <i class="fa-solid fa-ranking-star"></i>
+                <span>2022</span>
+              </div>
+              <img src="/assets/img/cour-napoleon-et-pyramide.jpg" alt="" />
+              <h4>Musée du Louvre</h4>
+              <div class="votes">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i><span>102 055</span>
+              </div>
+              <p>Bâtiments architecturaux, Musées d'art</p>
+              <!-- </div> -->
+            </a>
+
+            <a href="#" class="item-carrousel">
+              <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+              <div class="tripadvisor-badge">
+                <i class="fa-solid fa-ranking-star"></i>
+                <span>2022</span>
+              </div>
+              <img src="/assets/img/image-left.jpg" alt="" />
+              <h4>Arc de Triomphe</h4>
+              <div class="votes">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i> <span>45 702</span>
+              </div>
+              <p>Bâtiments architecturaux, Sites historiques</p>
+            </a>
+            <a href="#" class="item-carrousel">
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="tripadvisor-badge">
+                <i class="fa-solid fa-ranking-star"></i>
+                <span>2022</span>
+              </div>
+              <img src="/assets/img/eiffeltoren.jpg" alt="" />
+              <h4>La tour Eiffel</h4>
+              <div class="votes">
+                <div class="circles-votes"></div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>141 649</span>
+              </div>
+              <p>
+                Tours et plateformes d'observation, Monuments & Points d'intérêt
+              </p>
+            </a>
+            <a href="#" class="item-carrousel">
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="tripadvisor-badge">
+                <i class="fa-solid fa-ranking-star"></i>
+                <span>2022</span>
+              </div>
+              <img src="/assets/img/eiffeltoren.jpg" alt="" />
+              <h4>La tour Eiffel</h4>
+              <div class="votes">
+                <div class="circles-votes"></div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>141 649</span>
+              </div>
+              <p>
+                Tours et plateformes d'observation, Monuments & Points d'intérêt
+              </p>
+            </a>
+          </div>
+        </div>
+        <!-- Se reposer -->
+        <div class="blocks-template container">
+          <div class="col-1">
+            <h3>Se reposer</h3>
+            <p>Un mélange de charme, de symboles et de modernité.</p>
+            <a href="#">Tout afficher</a>
+          </div>
+          <div class="col-2">
+            <div class="item-carrousel">
+              <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+              <div class="tripadvisor-badge">
+                <i class="fa-solid fa-ranking-star"></i>
+                <span>2022</span>
+              </div>
+              <img src="/assets/img/le-bristol-paris-colonnade.jpg" alt="" />
+              <a href="#"><h4>Le Bristol Paris</h4></a>
+              <div class="votes">
+                <div class="circles-votes"></div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>2198</span>
+              </div>
+            </div>
+            <div class="item-carrousel">
+              <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+              <div class="tripadvisor-badge">
+                <i class="fa-solid fa-ranking-star"></i>
+                <span>2022</span>
+              </div>
+              <img src="/assets/img/detail.jpg" alt="" />
+              <a href="#"><h4>La Réserve Paris - Hotel and Spa</h4></a>
+              <div class="votes">
+                <div class="circles-votes"></div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>571</span>
+              </div>
+            </div>
+            <div class="item-carrousel">
+              <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+              <div class="tripadvisor-badge">
+                <i class="fa-solid fa-ranking-star"></i>
+                <span>2022</span>
+              </div>
+              <img src="/assets/img/fourseason.jpg" alt="" />
+              <a href="#"><h4>Four seasons Hotel George V</h4></a>
+              <div class="votes">
+                <div class="circles-votes"></div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>382</span>
+              </div>
             </div>
             <div class="item-carrousel">
               <img src="/assets/img/image-left.jpg" alt="" />
               <a href="#"><h4>La tour Eiffel</h4></a>
               <div class="votes">141 649</div>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="item-carrousel">
               <img src="/assets/img/image-left.jpg" alt="" />
               <a href="#"><h4>La tour Eiffel</h4></a>
               <div class="votes">141 649</div>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="item-carrousel">
               <img src="/assets/img/image-left.jpg" alt="" />
               <a href="#"><h4>La tour Eiffel</h4></a>
               <div class="votes">141 649</div>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="item-carrousel">
-              <img src="/assets/img/image-left.jpg" alt="" />
-              <a href="#"><h4>La tour Eiffel</h4></a>
-              <div class="votes">141 649</div>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="item-carrousel">
-              <img src="/assets/img/image-left.jpg" alt="" />
-              <a href="#"><h4>La tour Eiffel</h4></a>
-              <div class="votes">141 649</div>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="item-carrousel">
-              <img src="/assets/img/image-left.jpg" alt="" />
-              <a href="#"><h4>La tour Eiffel</h4></a>
-              <div class="votes">141 649</div>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="item-carrousel">
-              <img src="/assets/img/image-left.jpg" alt="" />
-              <a href="#"><h4>La tour Eiffel</h4></a>
-              <div class="votes">141 649</div>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="item-carrousel">
-              <img src="/assets/img/image-left.jpg" alt="" />
-              <a href="#"><h4>La tour Eiffel</h4></a>
-              <div class="votes">141 649</div>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="item-carrousel">
-              <img src="/assets/img/image-left.jpg" alt="" />
-              <a href="#"><h4>La tour Eiffel</h4></a>
-              <div class="votes">141 649</div>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </div>
         </div>
+        <!-- Se restaurer -->
+        <div class="blocks-template container">
+          <div class="col-1">
+            <h3>Se restaurer</h3>
+            <p>Bistrots et bars typiques, et plus encore à Paris.</p>
+            <a href="#">Tout afficher</a>
+          </div>
+          <div class="col-2">
+            <div class="item-carrousel">
+              <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+              <div class="tripadvisor-badge">
+                <i class="fa-solid fa-ranking-star"></i>
+                <span>2022</span>
+              </div>
+              <img src="/assets/img/le-bristol-paris-colonnade.jpg" alt="" />
+              <a href="#"><h4>Verjus</h4></a>
+              <div class="votes">
+                <div class="circles-votes"></div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>597</span>
+              </div>
+            </div>
+            <div class="item-carrousel">
+              <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+              <div class="tripadvisor-badge">
+                <i class="fa-solid fa-ranking-star"></i>
+                <span>2022</span>
+              </div>
+              <img src="/assets/img/detail.jpg" alt="" />
+              <a href="#"><h4>La Réserve Paris - Hotel and Spa</h4></a>
+              <div class="votes">
+                <div class="circles-votes"></div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>571</span>
+              </div>
+            </div>
+            <div class="item-carrousel">
+              <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+              <div class="tripadvisor-badge">
+                <i class="fa-solid fa-ranking-star"></i>
+                <span>2022</span>
+              </div>
+              <img src="/assets/img/fourseason.jpg" alt="" />
+              <a href="#"><h4>Four seasons Hotel George V</h4></a>
+              <div class="votes">
+                <div class="circles-votes"></div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>382</span>
+              </div>
+            </div>
+            <div class="item-carrousel">
+              <img src="/assets/img/image-left.jpg" alt="" />
+              <a href="#"><h4>La tour Eiffel</h4></a>
+              <div class="votes">141 649</div>
+            </div>
+            <div class="item-carrousel">
+              <img src="/assets/img/image-left.jpg" alt="" />
+              <a href="#"><h4>La tour Eiffel</h4></a>
+              <div class="votes">141 649</div>
+            </div>
+            <div class="item-carrousel">
+              <img src="/assets/img/image-left.jpg" alt="" />
+              <a href="#"><h4>La tour Eiffel</h4></a>
+              <div class="votes">141 649</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-separator">Témoignages associés</div>
       </div>
     </main>
   </body>

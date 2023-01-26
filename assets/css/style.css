@@ -1,40 +1,70 @@
+:root {
+  --clr-neutral-900: hsl(0, 0%, 0%);
+  --clr-neutral-700: hsl(0, 0%, 20%);
+  --clr-neutral-100: hsl(0, 0%, 93%);
+  --clr-neutral-0: hsl(0, 0%, 100%);
+
+  --clr-neutral-200: hsl(19, 54%, 95%);
+  --clr-neutral-400: hsl(157, 58%, 95%);
+
+  --clr-accent-400: hsl(360, 100%, 68%);
+
+  --ff-primary: VS Reg, sans-serif;
+  --ff-secondary: Montserrat, sans-serif;
+  --ff-accent: VS Med, sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fw-xbold: 800;
+
+  --fs-900: 3.3rem;
+  --fs-600: 1.8rem;
+  --fs-500: 1.5rem;
+  --fs-450: 1.1rem;
+  --fs-400: 1rem;
+  --fs-300: 0.9rem;
+  --fs-200: 0.8rem;
+}
+
+/* Global settings */
+
 body {
-  font-family: "TS-Reg";
-  box-sizing: border-box;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-400);
+  color: var(--clr-neutral-900);
 }
 h1 {
-  font-size: 54px;
-  font-family: "TS-Med";
+  font-size: var(--fs-900);
+  font-family: var(--ff-accent);
   line-height: 65px;
-  color: black;
-  font-weight: 900;
+  font-weight: var(--fw-bold);
 }
 
 h2 {
-  font-family: TS-Med;
-  font-size: 28px;
-  font-weight: 800;
+  font-family: var(--ff-accent);
+  font-size: var(--fs-600);
+  font-weight: var(--fw-xbold);
   line-height: 34px;
-  margin-bottom: 30px;
 }
 h3 {
-  font-size: 24px;
+  font-size: var(--fs-500);
   line-height: 29px;
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-weight: var(--fw-bold);
 }
 
 h4 {
-  font-size: 18px;
+  font-size: var(--fs-450);
   line-height: 22px;
-  color: black;
-  font-weight: 700;
-  margin: 5px 0;
+  font-weight: var(--fw-regular);
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
+/* Utility classes */
+
 .container {
   width: 1136px;
   margin: 0 auto;
@@ -43,15 +73,12 @@ a {
  --------------  header  ----------------
  */
 header {
-  width: 1136px;
-  margin: auto;
-  height: 60px;
+  height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "TS-Med";
-  font-size: 16px;
-  line-height: 20px;
+  font-family: var(--ff-accent);
+  line-height: 1.3rem;
 }
 header img {
   width: 188px;
@@ -70,68 +97,64 @@ header img {
   border-radius: 20px;
 }
 .navbar a:hover {
-  background-color: hsl(0, 0%, 93%);
+  background-color: var(--clr-neutral-100);
 }
 
 .navbar button {
-  font-size: 16px;
   line-height: 20px;
   height: 42px;
-  background-color: black;
+  background-color: var(--clr-neutral-900);
   border-radius: 20px;
-  color: white;
+  color: var(--clr-neutral-0);
   padding: 10px 16px;
   border: none;
 }
 .navbar button:hover {
-  background-color: hsl(0, 0%, 20%);
+  background-color: var(--clr-neutral-700);
 }
 /* 
  --------------  title  ----------------
 */
-.title-section {
+.title {
   padding: 32px 0px 24px 0px;
-  font-size: 16px;
   line-height: 20px;
 }
+.title-section span {
+  color: var(--clr-accent-400);
+}
 .topline {
-  font-size: 14px;
-  color: #333333;
+  font-size: var(--fs-300);
+  color: var(--clr-neutral-700);
   line-height: 17px;
 }
 .topline a {
   text-decoration: underline;
-  font-size: 14px;
-  line-height: 17px;
-  color: inherit;
 }
 
-.acc-color {
-  color: hsl(360, 100%, 68%);
-}
 /* 
  --------------  cards  ----------------
 */
-.cards {
+nav {
   display: flex;
   gap: 10px;
 }
-.cards a {
+nav a {
   flex: 1;
 }
-.card {
-  box-sizing: border-box;
+.nav-item {
   border: 1px solid black;
   border-radius: 12px;
   padding: 18px 16px;
   height: 68px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.nav-item span {
+  margin-right: 0.3rem;
 }
 
-.card:hover {
-  box-sizing: border-box;
-  border: 1px solid black;
+.nav-item:hover {
   background-color: black;
   color: white;
 }
@@ -139,21 +162,21 @@ header img {
  --------------  pictures  ----------------
 */
 .pictures {
-  padding: 32px 0px 10px 0px;
+  margin: 2rem 0;
   display: flex;
   gap: 2px;
 }
 
-.col-1 img {
+.left-side img {
   width: 654px;
   height: 430px;
 }
-.col-2 {
+.rigth-side {
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
-.col-2 img {
+.rigth-side img {
   width: 480px;
   height: 214px;
 }
@@ -165,12 +188,14 @@ header img {
 .caption {
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
-  color: #333333;
+  align-items: center;
+  font-size: var(--fs-200);
+  color: var(--clr-neutral-700);
   padding-bottom: 50px;
 }
 .geoNav {
   display: flex;
+  align-items: center;
   gap: 5px;
 }
 
@@ -184,55 +209,66 @@ header img {
 
 .two-col {
   display: flex;
-  flex-direction: row;
+  margin-bottom: 3rem;
 }
-.text {
+.col-1-a {
   flex: 2;
   min-width: 700px;
 }
-.text p {
+.col-1-a p {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-450);
+
   line-height: 20px;
   margin-top: 30px;
-  max-width: 550px;
+  margin-right: 100px;
+}
+
+.map {
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: var(--ff-primary);
 }
 .topmap {
   flex: 1;
-  background-color: hsl(360, 98%, 68%);
-  border-radius: 10px 10px 0 0;
+  background-color: var(--clr-accent-400);
+  color: var(--clr-neutral-900);
+  font-weight: var(--fw-regular);
   display: flex;
   flex-direction: column;
-  padding: 20px 40px;
+  align-items: flex-start;
+  padding: 20px 30px;
 }
 .topmap button {
-  font-size: 16px;
   line-height: 20px;
   height: 42px;
-  background-color: hsl(0, 0%, 20%);
+  background-color: var(--clr-neutral-700);
   border-radius: 20px;
-  color: white;
+  color: var(--clr-neutral-0);
   padding: 10px 16px;
   border: none;
 }
 .topmap h3 {
-  font-family: "Roboto", sans-serif;
-  font-size: 25px;
-  width: 300px;
-  margin-bottom: 20px;
+  font-size: var(--fs-600);
+  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 .topmap p {
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 .map img {
   width: 480px;
+  height: 150px;
+  object-fit: cover;
 }
 
 /* 
- --------------  3 blocks templates  ----------------
+ --------------  2 col - Carrousel  ----------------
 */
 
 .blocks-template {
   display: flex;
-  padding-bottom: 200px;
+  margin: 4rem 0;
 }
 
 .blocks-template .col-1 {
@@ -242,35 +278,36 @@ header img {
 }
 
 .blocks-template .col-1 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--ff-secondary);
   margin-bottom: 20px;
-  color: hsl(0, 0%, 20%);
+  margin-right: 40px;
+  color: var(--clr-neutral-700);
 }
 
 .blocks-template .col-1 a {
-  font-size: 16px;
   line-height: 19px;
-  color: hsl(0, 0%, 20%);
   text-decoration: underline;
 }
 
-/* .blocks-template .col-2::-webkit-scrollbar {
+.blocks-template .col-2::-webkit-scrollbar {
   display: none;
 }
 .blocks-template .col-2 {
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
-} */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .blocks-template .col-2 {
   display: flex;
-  flex-direction: row;
   flex: 3;
-  overflow: visible;
+  flex-wrap: nowrap;
+  overflow: hidden;
   overflow-x: scroll;
   gap: 16px;
 }
 .blocks-template .col-2 .item-carrousel {
   width: 270px;
+  flex-shrink: 0;
   position: relative;
 }
 .blocks-template .col-2 .item-carrousel img {
@@ -279,11 +316,15 @@ header img {
   object-fit: cover;
   object-position: center;
 }
+.item-carrousel :hover {
+  opacity: 80%;
+}
 
 .heart-icon {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
   background-color: white;
   border-radius: 50%;
   top: 10px;
@@ -291,25 +332,30 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .tripadvisor-badge {
+  font-size: 14px;
+  font-weight: 700;
   box-sizing: border-box;
   position: absolute;
-  width: 30px;
-  height: 40px;
+  width: 33px;
+  height: 44px;
   background-color: hsl(44, 98%, 48%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  bottom: 95px;
+  gap: 5px;
+  top: 148px;
   left: 10px;
   border-radius: 15px 15px 4px 4px;
-  padding-top: 10px;
+  z-index: 1;
 }
-.tripadvisor-badge img {
-  transform: scale(0.1);
+.tripadvisor-badge span {
+  font-size: 12px;
+  font-family: TS-Med;
 }
 
 .votes {
@@ -325,5 +371,34 @@ header img {
   font-size: 14px;
   line-height: 17px;
   color: #333333;
-  margin-bottom: 10px;
+  margin: 8px 0px;
+}
+
+/* Testimonial */
+
+.testimonial-separator {
+  background-color: var(--clr-neutral-900);
+  color: var(--clr-neutral-0);
+  padding: 0.8rem 2rem;
+  overflow: hidden;
+  text-align: center;
+}
+.testimonial-separator:before,
+.testimonial-separator:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+.testimonial-separator:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.testimonial-separator:after {
+  left: 0.5em;
+  margin-right: -50%;
 }
