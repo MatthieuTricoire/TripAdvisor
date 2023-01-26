@@ -39,12 +39,21 @@
     <header class="container">
       <img src="/assets/img/logo_tripadvisor.svg" alt="" />
       <div class="navbar">
-        <a href="#"><i class="fa-solid fa-pen"></i><span>Avis</span></a>
-        <a href="#"><i class="fa-solid fa-road"></i><span>Voyages</span></a>
-        <a href="#"><i class="fa-solid fa-bell"></i><span>Alertes</span></a>
+        <a href="#"
+          ><i class="fa-solid fa-pen"></i><span class="visible">Avis</span></a
+        >
+        <a href="#"
+          ><i class="fa-solid fa-road"></i
+          ><span class="visible">Voyages</span></a
+        >
+        <a href="#"
+          ><i class="fa-solid fa-bell"></i
+          ><span class="visible">Alertes</span></a
+        >
         <button type="button">Connectez-vous</button>
         <a href="#"
-          ><i class="fa-solid fa-cart-shopping"></i><span>Panier</span></a
+          ><i class="fa-solid fa-cart-shopping"></i
+          ><span class="visible">Panier</span></a
         >
       </div>
     </header>
@@ -82,6 +91,12 @@
           </a>
           <a href="#" class="nav-item">
             <span>Forums de voyage</span><i class="fa-brands fa-discourse"></i>
+          </a>
+          <a href="#" class="nav-item hidden">
+            <span>Vols</span><i class="fa-brands fa-discourse"></i>
+          </a>
+          <a href="#" class="nav-item hidden">
+            <span>Croisières</span><i class="fa-brands fa-discourse"></i>
           </a>
           <a href="#" class="nav-item">
             <span>Plus</span>
@@ -416,7 +431,9 @@
             </div>
           </div>
         </div>
-        <div class="testimonial-separator">Témoignages associés</div>
+        <div class="line">
+          <div class="testimonial-separator">Témoignages associés</div>
+        </div>
       </div>
     </main>
   </body>
